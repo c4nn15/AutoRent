@@ -68,6 +68,24 @@ python -m unittest discover -s tests -t . -v
 ```
 Resultados y casos en [`doc/plan_pruebas.md`](doc/plan_pruebas.md).
 
+## Diagramas
+Los diagramas están escritos en Mermaid (código en `doc/`); estas son las versiones en imagen.
+
+### Casos de uso
+![Casos de uso](doc/diagramas/casos_uso.png)
+
+### Clases
+![Diagrama de clases](doc/diagramas/clases.png)
+
+### Secuencia: alquilar un vehículo
+![Secuencia de alquiler](doc/diagramas/secuencia_alquiler.png)
+
+### Secuencia: devolver un vehículo
+![Secuencia de devolución](doc/diagramas/secuencia_devolucion.png)
+
+### Modelo de datos
+![Modelo de datos](doc/diagramas/modelo_datos.png)
+
 ## Documentación
 - [Guía de instalación y uso](doc/como_ejecutar.md)
 - [Casos de uso](doc/uml_casos_uso.md) · [Clases](doc/uml_clase.md) · [Secuencia](doc/uml_secuencia.md)
