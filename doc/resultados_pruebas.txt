@@ -1,0 +1,84 @@
+AutoRent - resultado de la ejecucion de pruebas
+Fecha: 09/11/2026
+Entorno: macOS, Python 3.13.13, CustomTkinter 5.2.2, Tk 8.6
+Comando: python -m unittest discover -s tests -t . -v
+(Se omitieron los avisos ResourceWarning de la salida de error; no son fallas.)
+
+test_alquiler_ok (tests.test_agencia.TestAlquilar.test_alquiler_ok) ... ok
+test_cliente_dado_de_baja_no_alquila (tests.test_agencia.TestAlquilar.test_cliente_dado_de_baja_no_alquila) ... ok
+test_dado_de_baja_no_se_alquila (tests.test_agencia.TestAlquilar.test_dado_de_baja_no_se_alquila) ... ok
+test_dias_invalidos (tests.test_agencia.TestAlquilar.test_dias_invalidos) ... ok
+test_fecha_por_defecto_es_hoy (tests.test_agencia.TestAlquilar.test_fecha_por_defecto_es_hoy) ... ok
+test_indice_unico_impide_dos_activos (tests.test_agencia.TestAlquilar.test_indice_unico_impide_dos_activos) ... ok
+test_inexistentes (tests.test_agencia.TestAlquilar.test_inexistentes) ... ok
+test_no_disponible (tests.test_agencia.TestAlquilar.test_no_disponible) ... ok
+test_costo_por_dias_reales (tests.test_agencia.TestDevolver.test_costo_por_dias_reales) ... ok
+test_devolucion_anterior_al_inicio (tests.test_agencia.TestDevolver.test_devolucion_anterior_al_inicio) ... ok
+test_devolucion_anticipada (tests.test_agencia.TestDevolver.test_devolucion_anticipada) ... ok
+test_devolver_no_pisa_dos_veces (tests.test_agencia.TestDevolver.test_devolver_no_pisa_dos_veces) ... ok
+test_minimo_un_dia (tests.test_agencia.TestDevolver.test_minimo_un_dia) ... ok
+test_sin_alquiler_activo (tests.test_agencia.TestDevolver.test_sin_alquiler_activo) ... ok
+test_tarifa_se_congela_al_alquilar (tests.test_agencia.TestDevolver.test_tarifa_se_congela_al_alquilar) ... ok
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+  return self.conn.execute(
+ok
+test_alquiler_valida_dias (tests.test_agencia.TestEntidades.test_alquiler_valida_dias) ... ok
+test_cliente_valida_campos (tests.test_agencia.TestEntidades.test_cliente_valida_campos) ... ok
+test_fechas (tests.test_agencia.TestEntidades.test_fechas) ... ok
+test_vehiculo_normaliza_patente (tests.test_agencia.TestEntidades.test_vehiculo_normaliza_patente) ... ok
+test_vehiculo_valida_campos (tests.test_agencia.TestEntidades.test_vehiculo_valida_campos) ... ok
+test_activos (tests.test_agencia.TestHistorialYReportes.test_activos) ... ok
+test_detalle_ingresos_coincide_con_totales (tests.test_agencia.TestHistorialYReportes.test_detalle_ingresos_coincide_con_totales) ... ok
+test_historial_conserva_datos_tras_baja_de_cliente (tests.test_agencia.TestHistorialYReportes.test_historial_conserva_datos_tras_baja_de_cliente) ... ok
+test_historial_incluye_todo_y_ordena_reciente_primero (tests.test_agencia.TestHistorialYReportes.test_historial_incluye_todo_y_ordena_reciente_primero) ... ok
+test_ingresos_en_rango (tests.test_agencia.TestHistorialYReportes.test_ingresos_en_rango) ... ok
+test_ingresos_limites_inclusivos (tests.test_agencia.TestHistorialYReportes.test_ingresos_limites_inclusivos) ... ok
+test_ingresos_sin_datos_o_rango_invalido (tests.test_agencia.TestHistorialYReportes.test_ingresos_sin_datos_o_rango_invalido) ... ok
+test_ranking (tests.test_agencia.TestHistorialYReportes.test_ranking) ... ok
+test_conectar_es_idempotente (tests.test_agencia.TestPersistencia.test_conectar_es_idempotente) ... ok
+test_los_datos_sobreviven_al_reabrir_la_base (tests.test_agencia.TestPersistencia.test_los_datos_sobreviven_al_reabrir_la_base) ... ok
+test_baja_bloqueada_con_alquiler_activo (tests.test_agencia.TestVehiculosClientes.test_baja_bloqueada_con_alquiler_activo) ... ok
+test_baja_inexistente_o_repetida (tests.test_agencia.TestVehiculosClientes.test_baja_inexistente_o_repetida) ... ok
+test_baja_logica_oculta_pero_conserva (tests.test_agencia.TestVehiculosClientes.test_baja_logica_oculta_pero_conserva) ... ok
+test_duplicados (tests.test_agencia.TestVehiculosClientes.test_duplicados) ... ok
+test_modificar_con_datos_invalidos_no_cambia (tests.test_agencia.TestVehiculosClientes.test_modificar_con_datos_invalidos_no_cambia) ... ok
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+  def __exit__(self, exc_type, exc_value, tb):
+ok
+test_modificar_vehiculo_y_cliente (tests.test_agencia.TestVehiculosClientes.test_modificar_vehiculo_y_cliente) ... ok
+test_registrar_reactiva_dado_de_baja (tests.test_agencia.TestVehiculosClientes.test_registrar_reactiva_dado_de_baja) ... ok
+test_registrar_y_listar (tests.test_agencia.TestVehiculosClientes.test_registrar_y_listar) ... ok
+test_01_vehiculos (tests.test_gui_smoke.TestInterfaz.test_01_vehiculos) ... ok
+test_02_clientes (tests.test_gui_smoke.TestInterfaz.test_02_clientes) ... ok
+test_03_alquilar_y_devolver (tests.test_gui_smoke.TestInterfaz.test_03_alquilar_y_devolver) ... ok
+test_04_historial_y_reportes (tests.test_gui_smoke.TestInterfaz.test_04_historial_y_reportes) ... ok
+test_05_bajas (tests.test_gui_smoke.TestInterfaz.test_05_bajas) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.548s
+
+OK

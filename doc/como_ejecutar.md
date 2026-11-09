@@ -21,6 +21,8 @@ python main.py
   clientes 30123456 (Ana Garcia) y 25987654 (Martin Lopez); y un alquiler activo de XYZ789.
 - Para volver al estado inicial, cerrar la aplicación y borrar `autorent.db`.
 - Para hacer una copia de seguridad, copiar ese archivo.
+- Con la aplicación cerrada también se puede usar `python scripts/preparar_demo.py` (`respaldar`, `limpiar`,
+  `restaurar`, `listar`); las copias quedan en `respaldos/`.
 
 ## Uso por pantalla
 **Vehículos / Clientes**

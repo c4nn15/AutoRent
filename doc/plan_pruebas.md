@@ -32,14 +32,16 @@ python -m unittest discover -s tests -t . -v
 |---|---|---|---|
 | 09/11/2026 | Linux, Python 3.12, CustomTkinter 6.0.0, pantalla virtual (xvfb) | 45 (40 de lógica y 5 de interfaz) | 45 correctas, 0 fallas |
 | 09/11/2026 | Linux, Python 3.11, sin pantalla | 41 (la prueba de interfaz se omite) | 40 correctas, 1 omitida |
+| 09/11/2026 | macOS, Python 3.13.13, CustomTkinter 5.2.2, Tk 8.6 | 45 (40 de lógica y 5 de interfaz) | 45 correctas, 0 fallas (salida completa en `resultados_pruebas.txt`) |
 
-## Pruebas manuales pendientes en el equipo de desarrollo
-Completar al ejecutar la aplicación en macOS o Windows.
+## Pruebas manuales en el equipo de desarrollo
+Completar al ejecutar la aplicación en macOS o Windows (`python main.py`). Para partir de un estado
+conocido: `python scripts/preparar_demo.py limpiar` con la aplicación cerrada.
 
-| # | Verificación | Resultado |
-|---|---|---|
-| M1 | La aplicación abre y muestra los datos de demo | |
-| M2 | Cerrar y volver a abrir conserva lo cargado | |
-| M3 | Aspecto y legibilidad de las seis pantallas | |
-| M4 | Cuadro de confirmación al dar de baja | |
-| M5 | Redimensionar la ventana al tamaño mínimo | |
+| # | Verificación | Pasos | Resultado esperado | Fecha | Resultado |
+|---|---|---|---|---|---|
+| M1 | La aplicación abre y muestra los datos de demo | Borrar `autorent.db` y ejecutar `python main.py` | Se ven ABC123, XYZ789 y MNP456; clientes Ana Garcia y Martin Lopez | | |
+| M2 | Cerrar y volver a abrir conserva lo cargado | Registrar un vehículo, cerrar con la X, abrir de nuevo | El vehículo sigue en la tabla | | |
+| M3 | Aspecto y legibilidad de las seis pantallas | Recorrer Vehículos, Clientes, Alquilar, Devolver, Historial y Reportes | Textos legibles, nada cortado ni superpuesto | | |
+| M4 | Cuadro de confirmación al dar de baja | Seleccionar un vehículo y presionar *Dar de baja* | Pide confirmación; al cancelar no se da de baja | | |
+| M5 | Redimensionar la ventana al tamaño mínimo | Achicar la ventana al mínimo y recorrer las pantallas | Los controles siguen visibles y usables | | |

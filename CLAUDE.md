@@ -29,7 +29,8 @@ Compatibilidad objetivo: **Python 3.10+**. Las pruebas de interfaz se omiten sol
 | `repositorio.py` | **Única** capa que escribe SQL. |
 | `db.py` | Conexión y esquema SQLite (`autorent.db`, junto al código). |
 | `tests/` | `test_agencia.py` (lógica y persistencia) y `test_gui_smoke.py` (interfaz). |
-| `doc/` | Guía de uso, UML en Mermaid, modelo de datos y plan de pruebas. |
+| `doc/` | Guía de uso, UML en Mermaid, modelo de datos, plan de pruebas, bitácora, herramientas y guía de estudio. |
+| `scripts/` | `preparar_demo.py`: respaldar, limpiar y restaurar `autorent.db` para la demo. |
 
 La UI llama a `Agencia`; `Agencia` llama a `Repositorio`; solo `Repositorio` ve SQL. Los errores de
 negocio se lanzan como `ValueError` con mensaje legible, y la UI los muestra con `set_msg(..., ok=False)`.
@@ -47,12 +48,14 @@ negocio se lanzan como `ValueError` con mensaje legible, y la UI los muestra con
 - Los textos de la interfaz están **sin tildes** (estilo del prototipo); la documentación sí lleva tildes.
 - Al agregar una regla: primero en `modelo.py` con su prueba en `tests/test_agencia.py`, después en la UI.
 - Actualizar `README.md` (requerimientos) y `doc/` (UML, modelo de datos, plan de pruebas) cuando cambie el comportamiento.
-- No commitear `autorent.db` (está en `.gitignore`).
+- No commitear `autorent.db`, `respaldos/` ni `presentaciones/` (están en `.gitignore`).
 
 ## Estado actual
 - App completa y funcional con persistencia SQLite; 45 pruebas pasando (40 de lógica y 5 de interfaz).
 - La interfaz se verificó en pantalla virtual de Linux; **falta correrla en el equipo de Santiago** y completar M1–M5 en `doc/plan_pruebas.md`.
-- El repositorio git **todavía no tiene commits**.
+- Repositorio publicado en GitHub (`c4nn15/AutoRent`, rama `main`) desde el 09/11/2026.
+- Pruebas ejecutadas también en macOS (Python 3.13, CustomTkinter 5.2.2): 45 correctas (`doc/resultados_pruebas.txt`).
+- Documentos de entrega: `doc/bitacora.md`, `doc/herramientas.md`, `doc/guia_estudio.md`. Utilidad: `scripts/preparar_demo.py` (respaldar / limpiar / restaurar la base).
 
 ## Qué pide la materia
 **Ficha de propuesta** (Word): ya completada y enviada al docente para su aprobación. Plan de trabajo: octubre a diciembre.
@@ -71,10 +74,10 @@ Rúbrica: No cumple (<4), Cumple (4–7), Destacado (8–10).
 
 ## Pendientes
 - [ ] Probar en el equipo de Santiago y completar las pruebas manuales M1–M5.
-- [ ] Primer commit del repositorio.
+- [x] Primer commit del repositorio.
 - [ ] Respuesta del docente sobre: reutilizar el prototipo previo y si una app de escritorio con base local cuenta como Full Stack.
 - [ ] Presentación comercial y técnica.
-- [ ] Bitácora de avance.
-- [ ] Lista de herramientas utilizadas, incluida la IA.
+- [ ] Bitácora de avance (borrador en `doc/bitacora.md`; completar y mantener).
+- [ ] Lista de herramientas utilizadas, incluida la IA (borrador en `doc/herramientas.md`; revisar).
 - [ ] Demo pre-grabada.
 - [ ] Opcionales: empaquetar con PyInstaller (genera ejecutable para el sistema donde se compila), migrar la base a la nube (solo cambia `repositorio.py` y `db.py`).
